@@ -8,6 +8,5 @@ validation_key           '~/chef-repo/.chef/mindtree-validator.pem'
 chef_server_url          'https://52.206.23.171/organizations/mindtree'
 syntax_check_cache_path  '~/chef-repo/.chef/syntax_check_cache'
 cookbook_path [ '~/chef-repo/cookbooks' ]
-knife[:aws_access_key_id] = "AKIAIGWQDROHCG3OA75A"
-knife[:aws_secret_access_key] = "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"
+
 
