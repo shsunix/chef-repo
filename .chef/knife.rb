@@ -8,4 +8,8 @@ validation_key           '~/chef-repo/.chef/mindtree-validator.pem'
 chef_server_url          'https://52.207.225.106/organizations/mindtree'
 syntax_check_cache_path  '~/chef-repo/.chef/syntax_check_cache'
 cookbook_path [ '~/chef-repo/cookbooks' ]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 55253995152954901710433c154bcdd0e739edaa
 
