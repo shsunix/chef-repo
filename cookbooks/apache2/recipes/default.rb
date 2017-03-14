@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 package "apache2" do
-  action :install
+  action :uninstall
 end
 
 directory '/var/www' do
@@ -20,5 +20,5 @@ file '/var/www/index.html' do
 end
 
 service "apache2" do
-  action [:enable, :start]
+  action [:enable, :stop]
 end
