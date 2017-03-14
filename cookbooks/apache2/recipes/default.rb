@@ -17,8 +17,6 @@ end
 file '/var/www/index.html' do
   content '<html>Hello world</html>'
   mode '0755'
-  owner 'web_admin'
-  group 'web_admin'
 end
 
 service "apache2" do
