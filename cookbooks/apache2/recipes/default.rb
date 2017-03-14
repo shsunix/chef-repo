@@ -10,12 +10,12 @@ package "apache2" do
   action :install
 end
 
-directory '/var/www/html' do
+directory '/var/www' do
   recursive true
 end
 
-file '/var/www/html/index.html' do
-  content '<html>This is a test script</html>'
+file '/var/www/index.html' do
+  content '<html>Hello world</html>'
   mode '0755'
   owner 'web_admin'
   group 'web_admin'
