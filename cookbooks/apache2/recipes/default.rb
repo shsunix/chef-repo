@@ -17,3 +17,10 @@ cookbook_file "/var/www/html/index.html" do
  source "index.html"
  mode "0755"
 end
+
+template "/etc/apache2/sites-available/000-default.conf" do
+ source "apache2.erb"
+ action :create
+ notifies :restart, resources(:service => "apache2")
+end
+
