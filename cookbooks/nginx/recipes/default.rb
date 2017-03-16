@@ -10,7 +10,7 @@ package 'nginx' do
   action :install
 end
 
-template "/var/www/html/index.html" do
+template "/var/www/nginx-default/index.html" do
   source "index.html.erb"
   mode "0644"
 end
