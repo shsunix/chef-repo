@@ -4,19 +4,11 @@
 #
 # Copyright 2017, YOUR_COMPANY_NAME
 #
-# All rights reserved - Do Not Redistribute
-#
-package 'nginx' do
-  action :install
+# All rights reserved - Do Not Redistribu
+directory '/var/test' do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  recursive true
+  action :create
 end
-
-service 'nginx' do
-  action [ :enable, :start ]
-end 
-
-cookbook_file "/var/www/index.html" do
- source "index.html"
- mode "0644"
-end
-
-
