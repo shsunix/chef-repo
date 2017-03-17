@@ -1,4 +1,4 @@
-i#
+#
 # Cookbook Name:: cookie
 # Recipe:: default
 #
