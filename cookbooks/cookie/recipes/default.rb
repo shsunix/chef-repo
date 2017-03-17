@@ -6,9 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-directory '/var/www/apache2/' do
+directory '/var/www/apache2' do
   owner 'root'
   group 'root'
   mode '0755'
-  action :create
+  recursive true
 end
