@@ -4,17 +4,8 @@
 #
 # Copyright 2017, YOUR_COMPANY_NAME
 #
-# All rights reserved - Do Not Redistribu
-directory '/var/test' do
-  owner 'root'
-  group 'root'
-  mode '0755'
-  action :create
-end
-
-directory '/var/test1' do
-  owner 'root'
-  group 'root'
-  mode '0755'
-  recursive true
+# All rights reserved - Do Not Redistribu'
+cookbook_file "/var/index.html" do
+  source "index.html"
+  mode "0644"
 end
