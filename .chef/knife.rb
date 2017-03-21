@@ -2,9 +2,9 @@ log_level                :info
 log_location             STDOUT
 ssl_verify_mode          :verify_none
 node_name                'admin'
-client_key               '~/chef-repo/.chef/admin.pem'
-validation_client_name   'mindtree-validator'
-validation_key           '~/chef-repo/.chef/mindtree-validator.pem'
-chef_server_url          'https://52.207.225.106/organizations/mindtree'
-syntax_check_cache_path  '~/chef-repo/.chef/syntax_check_cache'
-cookbook_path [ '~/chef-repo/cookbooks' ]
+client_key               '/root/chef-repo/.chef/admin.pem'
+validation_client_name   'chef-validator'
+validation_key           '/chef-repo/.chef/chef-validator.pem'
+chef_server_url          'https://54.227.38.62:443'
+syntax_check_cache_path  '/root/chef-repo/.chef/syntax_check_cache'
+cookbook_path		 '/root/chef-repo/cookbooks'
